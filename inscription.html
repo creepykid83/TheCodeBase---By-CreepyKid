@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>📜 Inscription</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                background-color: black;
+                color: #00ff00;
+                text-shadow: 0 0 8px #00ff00;
+                text-align: center;
+                padding: 40px 20px;
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 2.8em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+                color: #aaffaa;
+                max-width: 800px;
+                margin: 20px auto;
+            }
+
+            p {
+                font-size: 1.1em;
+                margin-bottom: 30px;
+            }
+
+            .form-container {
+                background-color: #001100;
+                border: 2px solid  #00ff00;
+                border-radius: 12px;
+                padding: 30px;
+                max-width: 500px;
+                margin: 40px auto;
+                box-shadow: 0 0 15px #00ff00;
+            }
+            
+            input, textarea {
+                width: 90%;
+                padding: 12px;
+                margin: 10px 0;
+                background-color: #002200;
+                border: 1px solid #00ff00;
+                border-radius: 6px;
+                color: #00ff00;
+                font-size: 1em;
+            }
+
+            input::placeholder, textarea::placeholder {
+                color: #88ff88;
+            }
+
+            button {
+                background-color: #003300;
+                color: #00ff00;
+                border: 2px solid #00ff00;
+                padding: 14px 28px;
+                font-size: 1.2em;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 8px;
+                text-shadow: 0 0 6px #00ff00;
+                box-shadow: 0 0 10px #00ff00;  
+                margin-top: 20px;          
+            }
+
+            button:hover {
+                background-color: #00ff00;
+                color: black;
+                text-shadow: none;
+                box-shadow: 0 0 20px #00ff00;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Rejoins-nous !</h1>
+        <h2>Ici, tu pourras partager tes projets, collaborer avec d'autres pour créer des projets ENSEMBLE, et tu pourras aussi discuter avec Platon !</h2>
+        <p>Platon est la mascotte et l'IA du site !</p>
+        <div class="form-container">
+            <h3>📝 Formulaire d'inscription</h3>
+            <form action="https://formspree.io/f/mjknolda" method="POST">
+                <input type="text" name="pseudo" placeholder="Ton pseudo cyber" required>
+                <input type="text" name="email" placeholder="Ton email" required>
+                <input type="text" name="langage_prefere" placeholder="Ton langage préféré" required>
+                <textarea name="message" rows="4" placeholder="Pourquoi tu veux nous rejoindre ?"></textarea>
+                <button type="submit">🚀 S'inscrire</button>
+            </form>
+        </div>
+
+        <p><a href="accueil.html" style="color:#00ff00;">Retour à l'accueil</a></p>
+    </body>
+</html>
